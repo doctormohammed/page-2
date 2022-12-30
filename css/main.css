@@ -1,0 +1,226 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+ul{
+    list-style: none;
+    margin: 0;
+}
+h2{
+    text-transform: capitalize;
+}
+
+ul li{
+    padding: 15px 5px;
+    cursor: pointer;
+    transition: 0.4s;
+    margin: 4px;
+    text-transform: capitalize;
+}
+
+ul li:hover{
+    color: white;
+    background-color: black;
+}
+.about .row{
+    justify-content: center;
+    gap: 20px;
+}
+
+section{
+    margin: 30px 0;
+    background-color: #eee;
+}
+.land{
+    background: url("/images/background/background1.webp");
+    background-size: cover;
+    height: 600px; ;
+    /* text-align: center; */
+    text-transform: capitalize;
+    color: white;
+    position: relative;
+}
+
+.land .home-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+.home-content p{
+    font-size: 20px;
+    line-height: 30px;
+}
+.home-content p::first-line{
+    color: orange;
+}
+.home-content p::first-letter{
+    color: rgb(255, 0, 43);
+    font-size: 28px;
+}
+.land .overlay{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    top: 0;
+    background-color: black;
+    opacity: 0.6;
+}
+.prices-cont{
+    text-align: center;
+    gap: 20px;
+    justify-content: center;
+}
+.prices-cont button{
+    padding: 7px;
+    border: 0;
+    background-color: #0a6ae7eb;
+    color: white;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.prices-cont .prices-item{
+    background-color: #eee;
+    padding: 10px;
+}
+
+.port .port-item{
+    position: relative;
+    text-align: center;
+    margin: 17px 0;
+}
+.item-layer{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    transition: height 0.3s ;
+}
+.number .overlay{
+    background: url('../images/background/background2.webp') fixed;
+    background-size: cover;
+    color: white;
+}
+.number{
+    position: relative;
+}
+.number .over{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+}
+h3{
+    text-transform: capitalize;
+}
+.effect{
+    padding: 18px;
+}
+.number-cont{
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    z-index: 5;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   flex-direction: row;
+   align-items: center;
+}
+
+.item-layer h3 , .item-layer span , .item-layer i{
+    margin-bottom: 20px;
+    display: block;
+}
+
+.port-item:hover .item-layer{
+    height: 100%
+}
+
+
+.plog-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: center;
+}
+.plog-cont .plog-item{
+    flex: 1;
+}
+
+
+form{
+    padding: 15px 0;
+}
+form button{
+    display: block;
+    width: 100%;
+    border: 0;
+    padding: 5px;
+    text-transform: capitalize;
+    font-size: 19px;
+    background-color: #0a6ae7eb;
+    cursor: pointer;
+    color: white;
+}
+
+
+form input , textarea{
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+}
+input:focus , textarea:focus{
+    outline: 1px solid rgba(233, 72, 201, 0.831);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer div{
+    display: flex;
+
+}
